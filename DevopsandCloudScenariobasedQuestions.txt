@@ -1,8 +1,6 @@
 #NEW QUESTIONS ON AWS
 #this is edited file
 
-
-
 1. Scenario: You have a microservices application that needs to scale
 dynamically based on traffic. How would you design an architecture for
 this using AWS ?
@@ -10,7 +8,7 @@ this using AWS ?
 Answer: I would use Amazon ECS or Amazon EKS for container orchestration, coupled with
 AWS Auto Scaling to adjust the number of instances based on CPU or custom metrics.
 Application Load Balancers can distribute traffic, and Amazon CloudWatch can monitor and
-trigger scaling events.
+trigger auto scaling events.
 
 2. Scenario: Your application's database is experiencing performance
 issues. Describe how you would use AWS tools to troubleshoot and
@@ -30,7 +28,7 @@ issues in your infrastructure. How could you prevent and manage this
 effectively?
 
 Answer: I would implement Infrastructure as Code (IaC) using AWS CloudFormation or
-Terraform. By versioning and automating infrastructure changes, we can ensure consistent and repeatable deployments.
+Terraform in HCL. By versioning and automating infrastructure changes, we can ensure consistent and repeatable deployments.
 
 5. Scenario: Your company is launching a new product, and you expect
 a sudden spike in traffic. How would you ensure the application
